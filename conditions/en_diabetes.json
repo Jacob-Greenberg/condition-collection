@@ -1,6 +1,6 @@
 {
     "condition":"Diabetes",
-    "description":"This type of high blood sugar occurs when your body can’t use sugars as energy",
+    "description":"High blood sugar occurs when your body can’t use sugars as energy so the sugars build up in your blood",
     "symptoms":[
         "Intense thirst",
         "Being very tired",
@@ -44,5 +44,6 @@
             ],
             "timeline":"Maximum effect time in up to 2 weeks"
         }
-    ]
+    ],
+    "extra":"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_fCqEIn7ccA?si=gPQ7thinI19Ltuwz\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/RyGx--K75wM?si=MfVhHfsI8n3UWfBL\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe><br><a href=\"https://nafcclinics.org/find-clinic/\"></a>"
 }

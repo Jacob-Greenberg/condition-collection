@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search for {{condition}}</title>
+    <title>{{headers['search']}}{{condition}}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
 </head>
 <body>
     <div class="searchresult">
         <h1 class="search_title">{{condition}}</h1>
-        <h2 class="search_title">What is it?</h2>
+        <h2 class="search_title">{{headers['desc']}}</h2>
         <p>{{description}}</p>
-        <h2 class="search_title">What are the symptoms?</h2>
+        <h2 class="search_title">{{headers['search']}}</h2>
         <ul>{% for symptom in symptoms %} 
             <li>{{symptom}}</li> 
             {% endfor %} 
         </ul>
-        <h2 class="search_title">How do we treat it?</h2>
+        <h2 class="search_title">{{headers['treatment']}}</h2>
         <ul>{% for treat in treatment %} 
             <li>{{treat}}</li> 
             {% endfor %} 
         </ul>
-        <h2 class="search_title">What lifestyle changes could I make?</h2>
+        <h2 class="search_title">{{headers['lifestyle']}}</h2>
         <ul>{% for life in lifestyle %} 
             <li>{{life}}</li> 
             {% endfor %} 
         </ul>
-        <h2 class="search_title">What are the medications used to treat this?</h2>
+        <h2 class="search_title">{{headers['treatment']}}meds</h2>
         {% for med in medications%}
         <h3>{{med['name']}}</h3>
         <h3 class="note">{{med['note']}}</h3>
@@ -36,7 +36,7 @@
             {%endfor%}
         </ul>
 
-        <h4>Interactions</h4>
+        <h4>{{headers['interactions']}}</h4>
        
         <ul>{% for interact in med['interactions']%}
             <li>{{interact}}</li>
@@ -47,6 +47,9 @@
 
         <p>{{med['timeline']}}</p>
             {% endfor %}
+            <div class="extra">
+                {{extra|safe}}
+            </div>
         <div class="center">
             <a href="/main">Go back</a>
         </div>
