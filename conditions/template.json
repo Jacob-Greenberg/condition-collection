@@ -1,0 +1,17 @@
+{
+    "condition":"",
+    "description":"",
+    "symptoms":[""],
+    "treatment":[""],
+    "lifestyle":[""],
+    "medications":[
+        {
+            "name":"",
+            "note":"",
+            "description":"",
+            "side_effects":[""],
+            "interactions":[""],
+            "timeline":""
+        }
+    ]
+}

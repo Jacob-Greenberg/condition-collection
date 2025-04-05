@@ -1,0 +1,43 @@
+{
+    "condition":"Hypertension",
+    "description":"High blood pressure occurs when there is a bigger force needed to move blood from your heart to the rest of the body.<br>Nearly half of adults in the United states have high blood pressure!",
+    "symptoms":[
+        "Symptons are rare for this condition"
+    ],
+    "treatment":[
+        "Medications to lower your blood pressure like lisinopril or losartan"
+    ],
+    "lifestyle":[
+        "Reducing salt in your diet",
+        "Increasing exercise to around 30 minutes per day",
+        "Weight loss through exercise or diet changes",
+        "Increasing potassium in your diet by eating foods rich in it like bananas, spinach, or potatoes"
+    ],
+    "medications":[
+        {
+            "name":"Lisinopril",
+            "note":"",
+            "description":"This drug that lowers the amount of pressure needed to pump blood through the body",
+            "side_effects":[
+                "Dizziness and fatigue",
+                "Consistent, dry cough in some cases",
+                "Facial swelling in some cases"
+            ],
+            "interactions":[
+                "Medications that are used to reduce pain may reduce the effectiveness of this medication",
+                "Be cautious using this medication if you have a history of kidney issues"
+            ],
+            "timeline":"Maximum effect time in 6 hours"
+        },
+        {
+            "name":"Losartan",
+            "note":"",
+            "description":"This drug that lowers the amount of pressure needed to pump blood through the body",
+            "side_effects":[
+                "May cause increased potassium levels in your body, be aware if you start to feel weak or have chest pain"
+            ],
+            "interactions":"Pain medications may lower the effectiveness of this medication",
+            "timeline":"Maximum effect time in 6 hours"
+        }
+    ]
+}

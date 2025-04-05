@@ -1,0 +1,46 @@
+{
+    "condition":"Diabetes",
+    "description":"This type of high blood sugar occurs when your body can’t use sugars as energy",
+    "symptoms":[
+        "Intense thirst",
+        "Being very tired",
+        "Urinating often",
+        "Weight changes",
+        "Blurry vision"
+    ],
+    "treatment":[
+        "Drugs to lower blood sugar like metformin or insulin to help change the sugar in your blood to energy",
+        "Blood sugar monitors, check your local free clinic/pharmacy for options that may be no cost for you"
+    ],
+    "lifestyle":[
+        "Increased exercise to 30 or so minutes a day",
+        "Diet changes like eating more vegetables and less simple sugars like candy, cookies, chips"
+    ],
+    "medications":[
+        {
+            "name":"Insulin",
+            "note":"For type 1 Diabetes",
+            "description":"Works in your body to change sugars to energy",
+            "side_effects":[
+                "Possible low blood sugar (feeling tired, weak, or lightheaded",
+                "Weight gain"
+            ],
+            "interactions":"Other medications that are used to lower blood sugar or control weight (jardiance, ozempic, etc.)",
+            "timeline":"Maximum effect time in 4-12 hours"
+        },
+        {
+            "name":"Metformin",
+            "note":"For type 2 Diabetes",
+            "description":"Works in your body to lower the production of sugars and allow them to not get into the blood",
+            "side_effects":[
+                "Stomach upsets and changes to the number of bathroom trips daily",
+                "Loss of fluids, make sure to drink plenty of water"
+            ],
+            "interactions":[
+                "The medication Ranolazin can cause negetive side effects.",
+                "Exercise caution when consume alchoholic beverages"
+            ],
+            "timeline":"Maximum effect time in up to 2 weeks"
+        }
+    ]
+}

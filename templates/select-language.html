@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <title>Select Language</title>
+    </head>
+<div class="searchbox">
+    <h3 class="subtitle">Select Language</h3>
+    <form name="language" action="/" method="GET">
+        <select name="language" id="lang">
+            <option value="en">English</option>
+            <option value="es">Español (Spanish</option>
+            <option value="de">Deutsch (German)</option>
+            <option value="dz">རྫོང་ཁ་ (Dzongkha)</option>
+            <option value="ne">नेपाली (Nepali)</option>
+          </select>
+          <button type="submit" class="btn btn-default">Continue</button>
+    </form>
+</div>
+</html>
