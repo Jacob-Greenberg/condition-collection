@@ -21,6 +21,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/condition')
+def condition():
+    condition_name = request.args.get('condition')
+    return render_template('condition.html', condition=condition_name )
 
 @app.route('/favicon.ico')
 def favicon():
