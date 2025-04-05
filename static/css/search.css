@@ -8,8 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
-    overflow: hidden;
+    text-align: left;
+    /*overflow: hidden;*/
 
 }
 h1 {
@@ -29,15 +29,25 @@ h2 {
     font-size: 20px;
     font-weight: 600;
     color: #000;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
+    margin-bottom: 5px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 p{
     font-size: 20px;
     font-weight: 300;
     color: #000;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
+    margin-bottom: 5px;
 }
 form {
     width: 100%;
@@ -54,6 +64,9 @@ form input {
     padding: 10px;
     border: 1px solid #000;
     border-radius: 5px;
+}
+.center{
+    text-align: center;
 }
 form button {
     width: 100%;
@@ -85,4 +98,10 @@ form button:hover {
     background: rgba(255, 255, 255, 1);
     border-radius: 15px;
     box-shadow: 0px 0px 10px 0px #000;
+}
+
+.note{
+    margin-top: 0;
+    font-size: 10px;
+    font-style: italic; 
 }

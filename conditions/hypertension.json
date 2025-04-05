@@ -36,7 +36,7 @@
             "side_effects":[
                 "May cause increased potassium levels in your body, be aware if you start to feel weak or have chest pain"
             ],
-            "interactions":"Pain medications may lower the effectiveness of this medication",
+            "interactions":["Pain medications may lower the effectiveness of this medication"],
             "timeline":"Maximum effect time in 6 hours"
         }
     ]

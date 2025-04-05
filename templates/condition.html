@@ -4,20 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search for {{condition}}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
 </head>
 <body>
     <div class="searchresult">
-        <h1>{{condition}}</h1>
-        <h2>What is it?</h2>
+        <h1 class="search_title">{{condition}}</h1>
+        <h2 class="search_title">What is it?</h2>
         <p>{{description}}</p>
-        <h2>What are the symptoms?</h2>
-        <p>{{symptoms}}</p>
-        <h2>How can we treat it?</h2>
-        <p>{{treatment}}</p>
-        <p>{{lifestyle}}</p>
-        <p>{{medications}}</p>
-        <a href="/">Go back</a>
+        <h2 class="search_title">What are the symptoms?</h2>
+        <ul>{% for symptom in symptoms %} 
+            <li>{{symptom}}</li> 
+            {% endfor %} 
+        </ul>
+        <h2 class="search_title">How do we treat it?</h2>
+        <ul>{% for treat in treatment %} 
+            <li>{{treat}}</li> 
+            {% endfor %} 
+        </ul>
+        <h2 class="search_title">What lifestyle changes could I make?</h2>
+        <ul>{% for life in lifestyle %} 
+            <li>{{life}}</li> 
+            {% endfor %} 
+        </ul>
+        <h2 class="search_title">What are the medications used to treat this?</h2>
+        {% for med in medications%}
+        <h3>{{med['name']}}</h3>
+        <h3 class="note">{{med['note']}}</h3>
+        <p>{{med['description']}}</p>
+        <ul>{% for side in med['side_effects']%}
+            <li>{{side}}</li>
+            {%endfor%}
+        </ul>
+
+        <h4>Interactions</h4>
+       
+        <ul>{% for interact in med['interactions']%}
+            <li>{{interact}}</li>
+            {%endfor%}
+
+        </ul>
+
+
+        <p>{{med['timeline']}}</p>
+            {% endfor %}
+        <div class="center">
+            <a href="/main">Go back</a>
+        </div>
     </div>
 </body>
 </html>

@@ -55,6 +55,8 @@ def main_page():
 @app.route('/condition', methods=['GET', 'POST'])
 def condition():
     condition_name = request.args.get('condition')
+    if condition_name not in conditions_json:
+        return render_template("not_found.html", condition=condition_name)
     res = conditions_json[condition_name]
     return render_template(
         'condition.html',

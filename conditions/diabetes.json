@@ -25,7 +25,9 @@
                 "Possible low blood sugar (feeling tired, weak, or lightheaded",
                 "Weight gain"
             ],
-            "interactions":"Other medications that are used to lower blood sugar or control weight (jardiance, ozempic, etc.)",
+            "interactions":[
+                "Other medications that are used to lower blood sugar or control weight (jardiance, ozempic, etc.)"
+            ],
             "timeline":"Maximum effect time in 4-12 hours"
         },
         {
